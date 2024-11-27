@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ladrillo">
+
+    <View
+        android:id="@+id/menuarriba"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logoarribabocata"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuarriba"
+        app:layout_constraintEnd_toEndOf="@+id/menuarriba"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="@+id/menuarriba"
+        app:layout_constraintTop_toTopOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.551"
+        app:srcCompat="@drawable/logomibocata" />
+
+    <View
+        android:id="@+id/viewfrios"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/btonbocadillofrio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.092" />
+
+
+    <View
+        android:id="@+id/viewcalientes"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/btonbocadillocaliente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <View
+        android:id="@+id/viewabajo"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:alpha="0.7"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.729" />
+
+    <TextView
+        android:id="@+id/titulosemana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESTA SEMANA:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewabajo"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/seleccionsemana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/irishgroverregular"
+        android:text="PARA MAÑANA:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewabajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <View
+        android:id="@+id/menuabajo"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewabajo" />
+
+    <ImageView
+        android:id="@+id/calendario"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/calendario"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/historial"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/historial"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/perfilfondo"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/proximofrio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewfrios"
+        app:layout_constraintEnd_toEndOf="@+id/viewfrios"
+        app:layout_constraintStart_toStartOf="@+id/viewfrios"
+        app:layout_constraintTop_toTopOf="@+id/viewfrios" />
+
+    <TextView
+        android:id="@+id/proximocaliente"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewcalientes"
+        app:layout_constraintEnd_toEndOf="@+id/viewcalientes"
+        app:layout_constraintStart_toStartOf="@+id/viewcalientes"
+        app:layout_constraintTop_toTopOf="@+id/viewcalientes" />
+
+    <GridView
+        android:id="@+id/gridbocadillossemana"
+        android:layout_width="369dp"
+        android:numColumns="2"
+        android:layout_height="310dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewabajo"
+        app:layout_constraintEnd_toEndOf="@+id/viewabajo"
+        app:layout_constraintStart_toStartOf="@+id/viewabajo"
+        app:layout_constraintTop_toBottomOf="@+id/titulosemana"
+        app:layout_constraintVertical_bias="0.028" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ladrillo">
+
+    <View
+        android:id="@+id/menuarriba"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logoarribabocata"
+        android:layout_width="139dp"
+        android:layout_height="65dp"
+        android:src="@drawable/logomibocata"
+        app:layout_constraintBottom_toBottomOf="@+id/menuarriba"
+        app:layout_constraintEnd_toEndOf="@+id/menuarriba"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="@+id/menuarriba"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECCIONA TU BOCADILLO"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuarriba"
+        app:layout_constraintEnd_toEndOf="@+id/menuarriba"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/menuarriba"
+        app:layout_constraintTop_toTopOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <View
+        android:id="@+id/cuadradobocadillofrio"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:alpha="0.8"
+        android:background="@drawable/btonbocadillofrio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <TextView
+        android:id="@+id/bocadillofrio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/irishgroverregular"
+        android:text="BOCADILLO FRÍO"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cuadradobocadillofrio"
+        app:layout_constraintEnd_toEndOf="@+id/cuadradobocadillofrio"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/cuadradobocadillofrio"
+        app:layout_constraintTop_toTopOf="@+id/cuadradobocadillofrio"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/descripcionfrio"
+        android:layout_width="288dp"
+        android:layout_height="182dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cuadradobocadillofrio"
+        app:layout_constraintEnd_toEndOf="@+id/cuadradobocadillofrio"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/cuadradobocadillofrio"
+        app:layout_constraintTop_toTopOf="@+id/cuadradobocadillofrio"
+        app:layout_constraintVertical_bias="0.726" />
+
+
+    <View
+        android:id="@+id/cuadradobocadillocaliente"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:alpha="0.8"
+        android:background="@drawable/btonbocadillocaliente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <TextView
+        android:id="@+id/bocadillocaliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/irishgroverregular"
+        android:text="BOCADILLO CALIENTE"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cuadradobocadillocaliente"
+        app:layout_constraintEnd_toEndOf="@+id/cuadradobocadillocaliente"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/cuadradobocadillocaliente"
+        app:layout_constraintTop_toTopOf="@+id/cuadradobocadillocaliente"
+        app:layout_constraintVertical_bias="0.089" />
+
+
+    <TextView
+        android:id="@+id/descripcioncaliente"
+        android:layout_width="288dp"
+        android:layout_height="182dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cuadradobocadillocaliente"
+        app:layout_constraintEnd_toEndOf="@+id/cuadradobocadillocaliente"
+        app:layout_constraintStart_toStartOf="@+id/cuadradobocadillocaliente"
+        app:layout_constraintTop_toTopOf="@+id/cuadradobocadillocaliente"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <View
+        android:id="@+id/menuabajo"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/calendario"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/calendario"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/historial"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/historial"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/perfilfondo"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.36" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

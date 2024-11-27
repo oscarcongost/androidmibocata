@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ladrillo">
+
+    <View
+        android:id="@+id/menuarriba"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="TOTAL MENSUAL"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/menuarriba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
+
+    <ImageView
+        android:id="@+id/logoarribabocata"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuarriba"
+        app:layout_constraintEnd_toEndOf="@+id/menuarriba"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="@+id/menuarriba"
+        app:layout_constraintTop_toTopOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.551"
+        app:srcCompat="@drawable/logomibocata" />
+
+    <View
+        android:id="@+id/viewfrios"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/btonbocadillofrio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.092" />
+
+
+    <View
+        android:id="@+id/viewcalientes"
+        android:layout_width="175dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/btonbocadillocaliente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <View
+        android:id="@+id/viewabajo"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:alpha="0.7"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <TextView
+        android:id="@+id/titulohistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HISTÓRICO DE BOCADILLOS"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewabajo"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <View
+        android:id="@+id/menuabajo"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewabajo" />
+
+    <ImageView
+        android:id="@+id/calendario"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/calendario"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/historial"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/historial"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/perfilfondo"
+        app:layout_constraintBottom_toBottomOf="@+id/menuabajo"
+        app:layout_constraintEnd_toEndOf="@+id/menuabajo"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/menuabajo"
+        app:layout_constraintTop_toTopOf="@+id/menuabajo"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <ListView
+        android:id="@+id/historialbocadillos"
+        android:layout_width="399dp"
+        android:layout_height="298dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewabajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewabajo"
+        app:layout_constraintTop_toBottomOf="@+id/titulohistorico" />
+
+    <TextView
+        android:id="@+id/preciototal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15€"
+        android:fontFamily="@font/irishgroverregular"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/menuarriba"
+        app:layout_constraintEnd_toEndOf="@+id/logoarribabocata"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="@+id/menuarriba"
+        app:layout_constraintTop_toTopOf="@+id/menuarriba"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <TextView
+        android:id="@+id/totalfrios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:fontFamily="@font/irishgroverregular"
+        app:layout_constraintBottom_toBottomOf="@+id/viewfrios"
+        app:layout_constraintEnd_toEndOf="@+id/viewfrios"
+        app:layout_constraintStart_toStartOf="@+id/viewfrios"
+        app:layout_constraintTop_toTopOf="@+id/viewfrios" />
+
+    <TextView
+        android:id="@+id/totalcalientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/irishgroverregular"
+        app:layout_constraintBottom_toBottomOf="@+id/viewcalientes"
+        app:layout_constraintEnd_toEndOf="@+id/viewcalientes"
+        app:layout_constraintStart_toStartOf="@+id/viewcalientes"
+        app:layout_constraintTop_toTopOf="@+id/viewcalientes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
